@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="/css/fontawesome-free-6.2.0-web/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="page d-flex">
+        <div class="sidebar bg-white">
+            <h3 class="m-auto p-3 mb-5 position-relative">Elzero</h3>
+            <ul class="list-unstyled">
+                <li class="active list-unstyled">
+                    <a class="text-decoration-none fw-bold" class="text-decoration-none" href="#">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Dashbord</span>
+                    </a>
+                </li>
+                <li class="list-unstyled">
+                    <a class="text-decoration-none fw-bold" class="text-decoration-none" href="#">
+
+                        <i class="fa-solid fa-gears"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="list-unstyled">
+                    <a class="text-decoration-none fw-bold" class="text-decoration-none" href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="list-unstyled">
+                    <a class="text-decoration-none fw-bold" class="text-decoration-none" href="#">
+                        <i class="fa-solid fa-diagram-project"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="list-unstyled">
+                    <a class="text-decoration-none fw-bold" class="text-decoration-none" href="#">
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li class="list-unstyled">
+                    <a class="text-decoration-none fw-bold" class="text-decoration-none" href="#">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li class="list-unstyled">
+                    <a class="text-decoration-none fw-bold" class="text-decoration-none" href="#">
+                        <i class="fa-solid fa-sheet-plastic"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li class="list-unstyled">
+                    <a class="text-decoration-none fw-bold" class="text-decoration-none" href="#">
+                        <i class="fa-solid fa-road"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="main-content">
+            <header>
+                <form>
+                    <i class="fa-solid fa-search"></i>
+                    <input type="search" name="" id="">
+                </form>
+                <div class="icons">
+                    <i class="fa-regular fa-bell active"></i>
+                    <img src="/images/user.jpg" alt="">
+                </div>
+            </header>
+            <!-- Start Content -->
+                <div class="container">
+                    <h1>Dashbord</h1>
+                    <div class="content">
+                        <div class="widget welcome-widget">
+                            <div class="header-welcome">
+                                <img src="/images/user.jpg" alt="" class="img-profile">
+                                <div class="sey-welcome">
+                                    <h3 class="top-title">Welcome</h3>
+                                    <p class="top-p">Elzero</p>
+                                </div>
+                                <img class="img-work" src="/images/work-steps.png" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="box">
+                                    <h4>Imad Tawab</h4>
+                                    <p>Developer</p>
+                                </div>
+                                <div class="box">
+                                    <h4>80</h4>
+                                    <p>Projects</p>
+                                </div>
+                                <div class="box">
+                                    <h4>8500$</h4>
+                                    <p>Earned</p>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary">Profile</button>
+
+                        </div>
+                        <div class="widget quick-widget">
+                            <h3 class="top-title">Quick Draft</h3>
+                            <p class="top-p">Write A Draft For Your Ideas</p>
+                            <form>
+                                <input type="text" placeholder="Title">
+                                <textarea placeholder="Your Thought"></textarea>
+                                <button class="btn btn-primary">Save</button>
+                            </form>
+
+                        </div>  
+                        <div class="widget target-widget">
+                            <h3 class="top-title">Yearly Targets</h3>
+                            <p class="top-p">Target Of The Year</p>
+                            <div style="--c:blue;--w:80%;" class="box">
+                                <i class="fa-solid fa-dollar"></i>
+                                <div class="target">
+                                    <p>Money</p>
+                                    <h4>20.000$</h4>
+                                    <div data-c="80%" class="myprogress">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="--c:orange;--w:55%;" class="box">
+                                <i class="fa-solid fa-code"></i>
+                                <div class="target">
+                                    <p>Projects</p>
+                                    <h4>24</h4>
+                                    <div data-c="55%" class="myprogress">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="--c:green;--w:75%" class="box">
+                                <i class="fa-solid fa-user"></i>
+                                <div class="target">
+                                    <p>Team</p>
+                                    <h4>12</h4>
+                                    <div data-c="75%" class="myprogress">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="widget ticket-widget">
+                            <h3 class="top-title">Tickets Statistics</h3>
+                            <p class="top-p">Everything About Support Tickets</p>
+                            <div class="parent-box">
+                                <div style="--c:orange" class="box">
+                                    <i class="fa-solid fa-rectangle-list"></i>
+                                    <h4>2500</h4>
+                                    <p>Total</p>
+                                </div>
+                                <div style="--c:blue" class="box">
+                                    <i class="fa-solid fa-spinner"></i>
+                                    <h4>500</h4>
+                                    <p>Pending</p>
+                                </div>
+                                <div style="--c:green" class="box">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <h4>1900</h4>
+                                    <p>Closed</p>
+                                </div>
+                                <div style="--c:red" class="box">
+                                    <i class="fa-solid fa-rectangle-xmark"></i>
+                                    <h4>100</h4>
+                                    <p>Deleted</p>
+                                </div>
+                            </div>
+                        </div>     
+                        <div class="widget news-widget">  
+                            <h3 class="top-title">Latest News</h3>
+                            <div class="parent-news">
+                                <div class="box">
+                                    <div class="par-info">
+                                        <img src="/images/cat-01.jpg" alt="">
+                                        <div class="info">
+                                            <h4>Created SASS Section</h4>
+                                            <p>New Sass Examples & Tutorials</p>
+                                        </div>
+                                    </div>
+                                    <div class="days">3 Days Ago</div>
+                                </div>
+                                <div class="box">
+                                    <div class="par-info">
+                                        <img src="/images/cat-02.jpg" alt="">
+                                        <div class="info">
+                                            <h4>Change The Design</h4>
+                                            <p>A Brand New Website Design</p>
+                                        </div>
+                                    </div>
+                                    <div class="days">5 Days Ago</div>
+                                </div>
+                                <div class="box">
+                                    <div class="par-info">
+                                        <img src="/images/cat-03.jpg" alt="">
+                                        <div class="info">
+                                            <h4>Team Increased</h4>
+                                            <p>3 Devlopers joined The Team</p>
+                                        </div>
+                                    </div>
+                                    <div class="days">7 Days Ago</div>
+                                </div>
+                                <div class="box">
+                                    <div class="par-info">
+                                        <img src="/images/cat-04.jpg" alt="">
+                                        <div class="info">
+                                            <h4>Added Payment Gateway</h4>
+                                            <p>Many New Payment Gatway Added</p>
+                                        </div>
+                                    </div>
+                                    <div class="days">9 Days Ago</div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="widget task-widget">
+                            <h3 class="top-title">Latest Tasks</h3>
+                            <div class="box">
+                                <div class="info">
+                                    <h5>Record One New Video</h5>
+                                    <p>Record Python Create Exe Project</p>
+                                </div>
+                                <i class="fa-solid fa-trash-can delete"></i>
+                            </div>
+                            <div class="box">
+                                <div class="info">
+                                    <h5>Write Article</h5>
+                                    <p>Write Low Level vs High Level Languages</p>
+                                </div>
+                                <i class="fa-solid fa-trash-can delete"></i>
+                            </div>
+                            <div class="box">
+                                <div class="info">
+                                    <h5>Finish Project</h5>
+                                    <p>Publish Academy Programming Project</p>
+                                </div>
+                                <i class="fa-solid fa-trash-can delete"></i>
+                            </div>
+                            <div class="box done">
+                                <div class="info">
+                                    <h5>Attend The Meeting</h5>
+                                    <p>Attend The Project Bisness Analysts Meeting</p>
+                                </div>
+                                <i class="fa-solid fa-trash-can delete"></i>
+                            </div>
+                            <div class="box">
+                                <div class="info">
+                                    <h5>Finish Lesson</h5>
+                                    <p>Finish Teaching Flex Box</p>
+                                </div>
+                                <i class="fa-solid fa-trash-can delete"></i>
+                            </div>
+                        </div> 
+                        <div class="widget top-search-widget">
+                            <h3 class="top-title">Top Search Items</h3>
+                            <div class="box">
+                                <h4>Keyword</h4>
+                                <h4>Search Count</h4>
+                            </div>
+                            <div class="box">
+                                <h4 class="word">Programming</h4>
+                                <div class="count">220</div>
+                            </div>
+                            <div class="box">
+                                <h4 class="word">JavaScript</h4>
+                                <div class="count">180</div>
+                            </div>
+                            <div class="box">
+                                <h4 class="word">PHP</h4>
+                                <div class="count">160</div>
+                            </div>
+                            <div class="box">
+                                <h4 class="word">Code</h4>
+                                <div class="count">140</div>
+                            </div>
+                            <div class="box">
+                                <h4 class="word">Design</h4>
+                                <div class="count">145</div>
+                            </div>
+                            <div class="box">
+                                <h4 class="word">Logic</h4>
+                                <div class="count">94</div>
+                            </div>
+                        </div>            
+                    </div>
+                </div>
+            <!-- End Content -->
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js" integrity="sha512-7dlzSK4Ulfm85ypS8/ya0xLf3NpXiML3s6HTLu4qDq7WiJWtLLyrXb9putdP3/1umwTmzIvhuu9EW7gHYSVtCQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
