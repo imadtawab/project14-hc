@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="/css/fontawesome-free-6.2.0-web/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="page d-flex">
+        <div class="sidebar bg-white">
+            <h3 class="m-auto p-3 mb-5 position-relative">Elzero</h3>
+            <ul class="list-unstyled">
+                <li class="active list-unstyled">
+                    <a class="text-decoration-none fw-bold" class="text-decoration-none" href="/index.html">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Dashbord</span>
+                    </a>
+                </li>
+                <li class="list-unstyled">
+                    <a class="text-decoration-none fw-bold" class="text-decoration-none" href="settings.html">
+
+                        <i class="fa-solid fa-gears"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="list-unstyled">
+                    <a class="text-decoration-none fw-bold" class="text-decoration-none" href="profile.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="list-unstyled">
+                    <a class="text-decoration-none fw-bold" class="text-decoration-none" href="projects.html">
+                        <i class="fa-solid fa-diagram-project"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="list-unstyled">
+                    <a class="text-decoration-none fw-bold" class="text-decoration-none" href="courses.html">
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li class="list-unstyled">
+                    <a class="text-decoration-none fw-bold" class="text-decoration-none" href="friends.html">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li class="list-unstyled">
+                    <a class="text-decoration-none fw-bold" class="text-decoration-none" href="files.html">
+                        <i class="fa-solid fa-sheet-plastic"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li class="list-unstyled">
+                    <a class="text-decoration-none fw-bold" class="text-decoration-none" href="plans.html">
+                        <i class="fa-solid fa-road"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="main-content">
+            <header>
+                <form>
+                    <i class="fa-solid fa-search"></i>
+                    <input type="search" name="" id="">
+                </form>
+                <div class="icons">
+                    <i class="fa-regular fa-bell active"></i>
+                    <img src="/images/user.jpg" alt="">
+                </div>
+            </header>
+            <!-- Start Content -->
+            <div class="container">
+                <h1>Settings</h1>
+                <div class="content">
+                    <div class="widget product-info-widget">
+                        <h3 class="top-title">Information</h3>
+                        <div class="box">
+                            <label for="type">Type :</label>
+                            <select name="type" id="type">
+                                <option value="glasses">Glasses</option>
+                                <option value="shoes">Shoes</option>
+                                <option value="accessories">Accessories</option>
+                                <option value="panties">Panties</option>
+                                <option value="shirts">Shirts</option>
+                            </select>
+                        </div>
+                        <div class="box">
+                            <label for="title">Tilte :</label>
+                            <input type="text" name="title" id="title">
+                        </div>
+                        <div class="box">
+                            <label for="description">Description :</label>
+                            <textarea name="description" id="description"></textarea>
+                        </div><div class="box">
+                            <label for="price">Price :</label>
+                            <input type="text" name="price" id="price">
+                        </div><div class="box">
+                            <label for="">Image :</label>
+                            <input type="file" name="image" id="addImage">
+                            <div class="images">
+                                <div id="galleryImages"></div>
+                                <label for="addImage"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget shoe-size-widget">
+                        <div class="par-title">
+                            <h3 class="top-title">Shoe Size</h3>
+                            <div class="onOff"></div>
+                        </div>
+                        <div class="props">
+
+                            <div class="size active">36</div>
+                            <div class="size active">37</div>
+                            <div class="size">38</div>
+                            <div class="size active">39</div>
+                            <div class="size">40</div>
+                            <div class="size">41</div>
+                            <div class="size active">42</div>
+                            <div class="size active">43</div>
+                            <div class="size active">44</div>
+                        </div>
+                    </div>
+                    <div class="widget product-color-widget">
+                        <div class="par-title">
+                            <h3 class="top-title">Product Color</h3>
+                            <div class="onOff"></div>
+                        </div>
+                        <div class="props">
+                            <div style="--color:#9c27b0" class="color"></div>
+                            <div style="--color:#673ab7" class="color"></div>
+                            <div style="--color:#e91e63" class="color"></div>
+                            <div style="--color:#2196f3" class="color"></div>
+                            <div style="--color:#00bcd4" class="color"></div>
+                            <div style="--color:#f44336" class="color"></div>
+                            <div style="--color:#009688" class="color"></div>
+                            <div style="--color:#4caf50" class="color"></div>
+                            <div style="--color:#ffeb3b" class="color"></div>
+                            <div style="--color:#ff9800" class="color"></div>
+                            <div style="--color:#ff5722" class="color"></div>
+                            <div style="--color:#795548" class="color"></div>
+                            <div style="--color:#9e9e9e" class="color"></div>
+                            <div style="--color:#000" class="color active"></div>
+                            <div style="--color:#fff" class="color" data-type="light"></div>
+                        </div>
+                    
+                    </div>
+                    <div class="widget volume-widget">
+                        <div class="par-title">
+                            <h3 class="top-title">Size</h3>
+                            <div class="onOff"></div>
+                        </div>
+                        <div class="props">
+                            <div class="size active">S</div>
+                            <div class="size active">M</div>
+                            <div class="size">L</div>
+                            <div class="size active">XL</div>
+                            <div class="size">2XL</div>
+                            <div class="size">3XL</div>
+                            <div class="size active">4XL</div>
+                        </div>
+                    </div>
+                </div>
+            <!-- End Content -->
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js"
+        integrity="sha512-7dlzSK4Ulfm85ypS8/ya0xLf3NpXiML3s6HTLu4qDq7WiJWtLLyrXb9putdP3/1umwTmzIvhuu9EW7gHYSVtCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/main.js"></script>
+</body>
+</html>

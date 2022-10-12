@@ -1,6 +1,10 @@
 /****************************
         Start Global 
 *****************************/
+.dn {
+  display: none !important;
+}
+
 :root {
   --black: #212529;
 }
@@ -21,6 +25,82 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #212529c7;
+}
+
+.widget {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 0;
+}
+
+.widget:last-child {
+  margin-bottom: 20px;
+}
+
+.widget .par-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.widget .onOff {
+  width: 60px;
+  height: 25px;
+  border: 2px solid #009688;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top: 15px;
+}
+
+.widget .onOff.on {
+  background-color: #009688;
+}
+
+.widget .onOff.on::before {
+  left: initial;
+  right: 1px;
+  background-color: #fff;
+}
+
+.widget .onOff::before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: #009688;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.widget .onOff::after {
+  content: "";
+}
+
+.widget .top-title {
+  padding-top: 15px;
+}
+
+.widget .top-p {
+  color: #777;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.widget button {
+  float: right;
 }
 
 /****************************
@@ -124,7 +204,13 @@
   -webkit-box-shadow: 0px 0px 2px 2px #ccc9c9;
           box-shadow: 0px 0px 2px 2px #ccc9c9;
   border-radius: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .page .main-content header form:hover input,
@@ -221,31 +307,6 @@
   -ms-grid-columns: (minmax(330px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   gap: 20px;
-}
-
-.page .main-content .container .content .widget {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  padding-top: 0;
-}
-
-.page .main-content .container .content .widget:last-child {
-  margin-bottom: 20px;
-}
-
-.page .main-content .container .content .widget .top-title {
-  padding-top: 15px;
-}
-
-.page .main-content .container .content .widget .top-p {
-  color: #777;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.page .main-content .container .content .widget button {
-  float: right;
 }
 
 .page .main-content .container .content .welcome-widget {
@@ -570,13 +631,14 @@
   border-bottom: 2px solid #eee;
 }
 
-.page .main-content .container .content .task-widget .box.done .info h5, .page .main-content .container .content .task-widget .box.done .info p {
-  opacity: .4;
+.page .main-content .container .content .task-widget .box.done .info h5,
+.page .main-content .container .content .task-widget .box.done .info p {
+  opacity: 0.4;
   text-decoration: line-through;
 }
 
 .page .main-content .container .content .task-widget .box.done .delete {
-  opacity: .4;
+  opacity: 0.4;
   cursor: no-drop;
 }
 
@@ -625,6 +687,319 @@
   background-color: #eee;
   border-radius: 6px;
   font-weight: bold;
+}
+
+.page .main-content .container .content .project-widget .projects {
+  border-left: 2px solid #0d6efd;
+  margin-left: 10px;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.page .main-content .container .content .project-widget .projects p {
+  position: relative;
+}
+
+.page .main-content .container .content .project-widget .projects p:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+.page .main-content .container .content .project-widget .projects p::before {
+  content: "";
+  position: absolute;
+  border: 2px solid #0d6efd;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  left: -34px;
+  background-color: #fff;
+  top: 26px;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.page .main-content .container .content .project-widget .projects p.done::after, .page .main-content .container .content .project-widget .projects p.started::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  left: -30px;
+  top: 22px;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  background-color: #0d6efd;
+}
+
+.page .main-content .container .content .project-widget .projects p.started::after {
+  -webkit-animation: started 1s infinite linear;
+          animation: started 1s infinite linear;
+}
+
+.page .main-content .container .content .project-widget img {
+  width: 120px;
+  float: right;
+  opacity: 0.25;
+}
+
+.page .main-content .container .content .reminder-widget .box {
+  padding-left: 20px;
+  margin: 20px 0 20px 40px;
+  border-left: 2px solid var(--c);
+  position: relative;
+}
+
+.page .main-content .container .content .reminder-widget .box::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--c);
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.page .main-content .container .content .reminder-widget .box h5 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.page .main-content .container .content .reminder-widget .box .time {
+  color: #555;
+}
+
+.page .main-content .container .content .product-info-widget .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.page .main-content .container .content .product-info-widget .box label {
+  font-weight: bold;
+}
+
+.page .main-content .container .content .product-info-widget .box label[for="addImage"] {
+  background-color: #f2f2f2;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.page .main-content .container .content .product-info-widget .box label[for="addImage"]::before {
+  content: "+";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #777;
+  margin-top: -3px;
+  font-weight: bold;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.page .main-content .container .content .product-info-widget .box select {
+  opacity: 1;
+}
+
+.page .main-content .container .content .product-info-widget .box select option {
+  opacity: 1;
+}
+
+.page .main-content .container .content .product-info-widget .box input, .page .main-content .container .content .product-info-widget .box textarea, .page .main-content .container .content .product-info-widget .box select {
+  min-width: 300px;
+  outline: none;
+  border: 2px solid #6f7173;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #f2f2f2;
+  -webkit-box-shadow: 0px 0px 0px 0px #6f717380;
+          box-shadow: 0px 0px 0px 0px #6f717380;
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: -webkit-box-shadow .3s;
+  transition: box-shadow .3s;
+  transition: box-shadow .3s, -webkit-box-shadow .3s;
+}
+
+.page .main-content .container .content .product-info-widget .box input:focus, .page .main-content .container .content .product-info-widget .box textarea:focus, .page .main-content .container .content .product-info-widget .box select:focus {
+  -webkit-box-shadow: 0px 0px 0px 4px #6f717380;
+          box-shadow: 0px 0px 0px 4px #6f717380;
+}
+
+.page .main-content .container .content .product-info-widget .box textarea {
+  height: 130px;
+  resize: none;
+}
+
+.page .main-content .container .content .product-info-widget .box input[type="file"] {
+  display: none;
+}
+
+.page .main-content .container .content .product-info-widget .box .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.page .main-content .container .content .product-info-widget .box .images #galleryImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.page .main-content .container .content .product-info-widget .box .images #galleryImages .par-img {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.page .main-content .container .content .product-info-widget .box .images #galleryImages .par-img img {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.page .main-content .container .content .product-info-widget .box .images #galleryImages .par-img .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(20%, -20%);
+          transform: translate(20%, -20%);
+  background: #333;
+  color: #fff;
+  font-size: 20px;
+  padding: 8px;
+  line-height: 5px;
+  padding-bottom: 13px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.page .main-content .container .content .product-info-widget .box .images #galleryImages .par-img .close:hover {
+  opacity: .8;
+}
+
+.page .main-content .container .content .shoe-size-widget {
+  color: #000;
+}
+
+.page .main-content .container .content .shoe-size-widget .props {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 5px;
+  padding-top: 20px;
+}
+
+.page .main-content .container .content .shoe-size-widget .props .size {
+  border: 2px solid #aaa;
+  color: #666;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.page .main-content .container .content .shoe-size-widget .props .size.active {
+  background: #009688;
+  color: #fff;
+  border-color: transparent;
+}
+
+.page .main-content .container .content .product-color-widget .props {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 5px;
+  padding-top: 20px;
+}
+
+.page .main-content .container .content .product-color-widget .props .color {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--color);
+  cursor: pointer;
+  border: 3px solid #e7e7e7;
+  -webkit-transition: border 0.3s;
+  transition: border 0.3s;
+}
+
+.page .main-content .container .content .product-color-widget .props .color.active {
+  border: 3px dotted #fff;
+  -webkit-box-shadow: inset 0px 0px 0px 3px #fff;
+          box-shadow: inset 0px 0px 0px 3px #fff;
+}
+
+.page .main-content .container .content .product-color-widget .props .color.active[data-type="light"] {
+  border: 3px dotted #000;
+}
+
+.page .main-content .container .content .volume-widget .props {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 5px;
+  padding-top: 20px;
+}
+
+.page .main-content .container .content .volume-widget .props .size {
+  border: 2px solid #aaa;
+  color: #666;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.page .main-content .container .content .volume-widget .props .size.active {
+  background: #009688;
+  color: #fff;
+  border-color: transparent;
 }
 
 /****************************
@@ -725,6 +1100,30 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@-webkit-keyframes started {
+  0% {
+    background-color: #0d6efd;
+  }
+  50% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #0d6efd;
+  }
+}
+
+@keyframes started {
+  0% {
+    background-color: #0d6efd;
+  }
+  50% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #0d6efd;
   }
 }
 /*# sourceMappingURL=style.css.map */
