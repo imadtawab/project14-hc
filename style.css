@@ -372,7 +372,7 @@
 
 .page .main-content .container .content .quick-widget form input,
 .page .main-content .container .content .quick-widget form textarea {
-  width: 100%;
+  max-width: 100%;
   margin-bottom: 20px;
   background: #ebe7d1;
   outline: none;
