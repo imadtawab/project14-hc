@@ -14,16 +14,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="main.js"></script>
 </head>
 
 <body>
-    <div class="page d-flex">
+    <div class="page d-flex closed-sidebar">
+        <div class="over-shadow"></div>
         <div class="sidebar bg-white">
+            <i class="close-sidebar fa-solid fa-xmark"></i>
             <h3 class="m-auto p-3 mb-5 position-relative">Elzero</h3>
             <ul class="list-unstyled">
                 <li class="active list-unstyled">
-                    <a class="text-decoration-none fw-bold" class="text-decoration-none" href="/index.html">
+                    <a class="text-decoration-none fw-bold" class="text-decoration-none" href="index.html">
                         <i class="fa-regular fa-chart-bar fa-fw"></i>
                         <span>Dashbord</span>
                     </a>
@@ -75,14 +78,16 @@
             </ul>
         </div>
         <div class="main-content">
+            <div class="over-shadow"></div>
             <header>
+                <i class="open-sidebar fa-solid fa-bars"></i>
                 <form>
                     <i class="fa-solid fa-search"></i>
                     <input type="search" name="" id="">
                 </form>
                 <div class="icons">
                     <i class="fa-regular fa-bell active"></i>
-                    <img src="/images/user.jpg" alt="">
+                    <img src="images/user.jpg" alt="">
                 </div>
             </header>
             <!-- Start Content -->
@@ -110,7 +115,7 @@
                             <textarea name="description" id="description"></textarea>
                         </div><div class="box">
                             <label for="price">Price :</label>
-                            <input type="text" name="price" id="price">
+                            <input type="number" name="price" id="price">
                         </div><div class="box">
                             <label for="">Image :</label>
                             <input type="file" name="image" id="addImage">
@@ -181,9 +186,9 @@
             <!-- End Content -->
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js"
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js"
         integrity="sha512-7dlzSK4Ulfm85ypS8/ya0xLf3NpXiML3s6HTLu4qDq7WiJWtLLyrXb9putdP3/1umwTmzIvhuu9EW7gHYSVtCQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/main.js"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    
 </body>
 </html>

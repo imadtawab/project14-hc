@@ -1,3 +1,17 @@
+// closed_sidebar
+document.querySelector(".close-sidebar").onclick = () => {
+    document.querySelector(".page").classList.add("closed-sidebar")
+}
+document.querySelector(".over-shadow").onclick = () => {
+    document.querySelector(".page").classList.add("closed-sidebar")
+}
+// open_sidebar
+document.querySelector(".open-sidebar").onclick = () => {
+    document.querySelector(".page").classList.remove("closed-sidebar")
+}
+
+
+
 // onOff
 let onOff = document.querySelectorAll(".onOff")
 let aa
