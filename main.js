@@ -10,6 +10,29 @@ document.querySelector(".open-sidebar").onclick = () => {
     document.querySelector(".page").classList.remove("closed-sidebar")
 }
 
+// Check_Active_Page
+document.querySelectorAll(".sidebar ul li a").forEach(function(a) {
+    if(a.pathname == location.pathname){
+        a.parentElement.classList.add("active")
+    }else{
+        a.parentElement.classList.remove("active")
+    }
+})
+
+
+// select_Status
+let selectsStatus = document.querySelectorAll(".orders .status select")
+selectsStatus.forEach((select) => {
+    select.onchange = (eo) => {
+        eo.target.setAttribute("class",eo.target.value)
+    }
+})
+selectsStatus.forEach((select) =>{
+    select.setAttribute("class",select.value)
+})
+
+
+
 
 
 // onOff

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storeino</title>
+    <link rel="stylesheet" href="/css/user.css">
+    <!-- ######## -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="client.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="home.html">
+                <img src="images/logo.webp" alt="">
+            </a>
+        </div>
+        <nav>
+            <a href="#">
+                <i class="fa-solid fa-heart">
+                    <span>0</span>
+                </i>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-cart-shopping">
+                    <span>5</span>
+                </i>
+            </a>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="product-details">
+            <div class="gallery">
+                <div class="main-img">
+                    <img src="images/image.jpg.jpg" alt="">
+                </div>
+                <div class="all-imgs">
+                    <div class="img active">
+                        <img src="images/image.jpg.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="images/cat-01.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="images/cat-03.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="images/cat-04.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <form class="info">
+                <h4>My Product</h4>
+                <div class="product-price">
+                    <div class="new-price">Price : 18<span>MAD</span></div>
+                    <div class="old-price">20<span>MAD</span></div>
+                </div>
+                <div class="choices">
+                    <div class="one-choices">
+                        <h6>Colors :</h6>
+                        <div class="colors">
+                            <div style="--color:#9c27b0" class="color active"></div>
+                            <div style="--color:#f44336" class="color"></div>
+                            <div style="--color:#4caf50" class="color"></div>
+                            <div style="--color:#ff5722" class="color"></div>
+                            <div style="--color:#9e9e9e" class="color"></div>
+                            <div style="--color:#000" class="color"></div>
+                         </div>
+                    </div>
+                    <div class="one-choices">
+                        <h6>Sizes :</h6>
+                        <div class="top-sizes sizes">
+                            <div class="size active">S</div>
+                            <div class="size">M</div>
+                            <div class="size">L</div>
+                            <div class="size">XL</div>
+                            <div class="size">2XL</div>
+                            <div class="size">3XL</div>
+                            <div class="size">4XL</div>
+                        </div>
+                    </div>
+                    <div class="one-choices">
+                        <h6>Shoe size :</h6>
+                        <div class="shoe-sizes sizes">
+                            <div class="size active">36</div>
+                            <div class="size">37</div>
+                            <div class="size">38</div>
+                            <div class="size">39</div>
+                            <div class="size">40</div>
+                            <div class="size">41</div>
+                            <div class="size">42</div>
+                            <div class="size">43</div>
+                            <div class="size">44</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="quantite">
+                    <button class="minus">-</button>
+                    <input type="number" value="1" readonly="readonly"/> 
+                    <button class="plus">+</button>
+                </div>
+                <div class="client-info">
+                    <label for="fullName">
+                        <div>Full Name <sup>*</sup> :</div>
+                        <input type="text" name="fullName" placeholder="Full Name" id="fullName">
+                    </label>
+                    <label for="phone">
+                        <div>Phone <sup>*</sup> :</div>
+                        <input type="tel" name="phone" placeholder="Phone" id="phone">
+                    </label>
+                    <label for="address">
+                        <div>Address <sup>*</sup> :</div>
+                        <input type="text" name="address" placeholder="Address" id="address">
+                    </label>
+                    <label for="city">
+                        <div>City <sup>*</sup> :</div>
+                        <input type="text" name="city" placeholder="City" id="city">
+                    </label>
+                    <section class="facture">
+                        <article class="sub-total">
+                            <h5>Subtotal :</h5>
+                            <div class="price">18<span>MAD</span></div>
+                        </article>
+                        <article class="shipping">
+                            <h5>Shipping :</h5>
+                            <div class="price">0<span>MAD</span></div>
+                        </article>
+                        <article class="total">
+                            <h5>Total :</h5>
+                            <div class="price">18<span>MAD</span></div>
+                        </article>
+                    </section>
+                    <button type="submit">Buy now</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        Made by Storeino , 2022
+    </footer>
+</body>
+</html>
